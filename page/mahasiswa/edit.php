@@ -7,7 +7,7 @@
 </style>
 
 <?php
-	include("headermhs3.php")
+	include("headermhs4.php")
 ?>
 
 <?php
@@ -94,11 +94,27 @@ if (isset($_POST['submit'])) {
 	</div>
 
 	<div class="cell">
-		<label>Prodi</label>
+		<label>Program Studi</label>
 		<div class="input-control text full-size">
 			<input type="text" name="prodi" value="<?= $prodi ?>">
 		</div>
 	</div>
+
+	<?php elseif ($_access == 'mahasiswa'): ?>
+	<div class="cell">
+		<label>Fakultas</label>
+		<div class="border input-control text full-size">
+		<?= $fakultas ?>
+		</div>
+	</div>
+
+	<div class="cell">
+		<label>Program Studi</label>
+		<div class="border input-control text full-size">
+		<?= $prodi ?>
+		</div>
+	</div>
+
 	<?php endif; ?>
 	
 </div>
