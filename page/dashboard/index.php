@@ -8,7 +8,8 @@
         </h1>
 
     <?php
-	    $sql = "SELECT mahasiswa.* FROM mahasiswa"; 
+	    $sql = "SELECT mahasiswa.* FROM mahasiswa
+				WHERE mahasiswa.npm IN (SELECT npm FROM krs)"; 
 	    $query = mysqli_query($koneksi, $sql);
     ?>
 

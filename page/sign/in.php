@@ -4,8 +4,8 @@
             height: 350px;
             top: 50%;
             left: 50%;
-            margin-left: -240px;
-            margin-top:100px;
+            margin-left: -270px;
+            margin-top: 80px;
             
             background: #FFFFFF;
             border: 1px solid #757575;

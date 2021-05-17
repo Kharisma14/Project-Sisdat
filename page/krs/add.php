@@ -39,7 +39,8 @@ extract($field);
 			FROM jadwal_dosen
 			LEFT JOIN mata_kuliah ON jadwal_dosen.kode=mata_kuliah.kode
 			LEFT JOIN dosen ON jadwal_dosen.nip=dosen.nip
-			WHERE jadwal_dosen.id_jd NOT IN (SELECT id_jd FROM krs WHERE npm='{$npm}')
+			WHERE mata_kuliah.semester=(SELECT semester FROM mahasiswa WHERE npm='{$npm}')
+			AND jadwal_dosen.id_jd NOT IN (SELECT id_jd FROM krs WHERE npm='{$npm}')
 			";
 
 	$query= mysqli_query($koneksi, $sql);

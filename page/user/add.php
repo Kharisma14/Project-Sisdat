@@ -70,11 +70,6 @@ if (isset($_POST['submit'])) {
 		    <span class="caption">Admin</span>
 		</label>
 		<label class="input-control radio">
-			<input type="radio" name="status" value="dosen">
-		    <span class="check"></span>
-		    <span class="caption">Dosen</span>
-		</label>
-		<label class="input-control radio">
 			<input type="radio" name="status" value="mahasiswa">
 		    <span class="check"></span>
 		    <span class="caption">Mahasiswa</span>

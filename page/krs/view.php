@@ -23,10 +23,9 @@ KRS <?= $_name ?>
 </h1>
 
 <?php
-$sqla = "SELECT krs.*, mahasiswa.nama as nama, mahasiswa.thn_akademik as thn_admik, mahasiswa.semester as smt
-		FROM krs
-		LEFT JOIN mahasiswa
-		ON mahasiswa.npm = krs.npm";
+$sqla = "SELECT mahasiswa.* FROM mahasiswa
+		LEFT JOIN krs
+		ON mahasiswa.npm = krs.npm WHERE mahasiswa.npm=$_id";
 $querya = mysqli_query($koneksi, $sqla);
 $field = mysqli_fetch_array($querya);
 extract($field);
@@ -54,14 +53,14 @@ extract($field);
 	<div class="cell">
 		<label>Tahun Akademik</label>
 		<div class="input-control text full-size">
-			<?= $field['thn_admik'] ?>
+			<?= $field['thn_akademik'] ?>
 		</div>
 	</div>
 
 	<div class="cell">
 		<label>Semester</label>
 		<div class="input-control text full-size">
-			<?= $field['smt'] ?>
+			<?= $field['semester'] ?>
 		</div>
 	</div>
 </div>

@@ -1,8 +1,8 @@
 <header class="app-bar fixed-top" data-role="appbar" style="background-color: #e5e5e5">
     <div class="atas">
         <a href="<?= $_url ?>" class="app-bar-element branding judul">
-        <h1>Sistem Pengisian KRS</h1>
-        <h2>Universitas Padjadjaran</h2>
+        <h1><b>Sistem Pengisian KRS</b></h1>
+        <h2 style="margin-top: -10px">Universitas Padjadjaran</h2>
         </a></br>
         <?php if ($_access != ''): ?>
         <ul class="app-bar-menu place-right fg-dark" data-flexdirection="reverse">

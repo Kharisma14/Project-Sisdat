@@ -10,7 +10,8 @@ Jadwal Mata Kuliah
 <?php
 	$sql = "SELECT jadwal_dosen.*, mata_kuliah.nama as matkul_nama, mata_kuliah.sks as matkul_sks
 			FROM jadwal_dosen LEFT JOIN mata_kuliah
-			ON mata_kuliah.kode=jadwal_dosen.kode";
+			ON mata_kuliah.kode=jadwal_dosen.kode
+			WHERE jadwal_dosen.id_jd IN (SELECT id_jd FROM krs WHERE npm=$_username)";
 	$query = mysqli_query($koneksi, $sql);
 ?>
 
