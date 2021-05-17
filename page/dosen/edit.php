@@ -1,4 +1,8 @@
 <?php
+	include("headerdosen3.php")
+?>
+
+<?php
 	if ($_access == 'dosen' && $_id != $_username) {
 		header("location:{$_url}dosen/edit/{$_username}");
 	}
@@ -7,9 +11,11 @@ $querya = mysqli_query($koneksi, "SELECT * FROM dosen WHERE nip='{$_id}'");
 $field = mysqli_fetch_array($querya);
 extract($field);
 ?>
+
+<div class="isi2">
 <h1>
 <a href="<?= $_url ?>dosen<?= $_access == 'dosen' ? '/view/' . $_id . '/' . urlencode($nama) : '' ?>" class="nav-button transform"><span></span></a>
-Edit Dosen <br> <?= $nama ?>
+Edit Dosen <br/><?= $nama ?>
 </h1>
 
 <?php
@@ -100,3 +106,4 @@ if (isset($_POST['submit'])) {
 </div>
 
 </form>
+</div>

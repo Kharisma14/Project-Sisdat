@@ -1,3 +1,8 @@
+<?php
+	include("headermatkul2.php")
+?>
+
+<div class="isi2">
 <h1>
 <a href="<?= $_url ?>matakuliah" class="nav-button transform"><span></span></a>
 Tambah Matkul
@@ -72,3 +77,5 @@ if (isset($_POST['submit'])) {
 </div>
 
 </form>
+
+</div>

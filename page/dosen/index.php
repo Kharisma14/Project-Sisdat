@@ -1,3 +1,8 @@
+<?php
+	include("headerdosen1.php")
+?>
+
+<div class="isi2">
 <h1>
 Dosen
 <span class="place-right">
@@ -116,3 +121,4 @@ Jadwal Dosen
 		
 	</tbody>
 </table>
+</div>

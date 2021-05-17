@@ -1,3 +1,8 @@
+<?php
+	include("headerkrs2.php")
+?>
+
+<div class="isi2">
 <h1>
 <a href="<?= $_url ?>krs/view/<?= $_id ?>" class="nav-button transform"><span></span></a>
 Pilih Mata Kuliah
@@ -82,3 +87,5 @@ extract($field);
 <button type="submit" name="submit" class="button primary">SUBMIT</button>
 
 </form>
+
+</div>

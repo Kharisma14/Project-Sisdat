@@ -1,4 +1,8 @@
 <?php
+include("header.php")
+?>
+
+<?php
 
 if ($_id == 'yes') {
 
@@ -14,6 +18,8 @@ if ($_id == 'yes') {
 }
 ?>
 
+<div class="isi2">
 <h1>Sign Out?</h1>
 <h3>Apakah anda yakin akan Logout?</h3>
 <a href="<?= $_url ?>sign/out/yes" class="button primary">Yes</a> <a href="<?= $_url ?>" class="button danger">No</a>
+</div>

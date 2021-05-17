@@ -1,4 +1,8 @@
-    <?php if ($_access == 'admin'): ?>
+	<?php
+	include("headerdb.php")
+	?>
+	<div class="isi2">
+	<?php if ($_access == 'admin'): ?>
         <h1>
         KRS Mahasiswa
         </h1>
@@ -61,4 +65,5 @@
     <?php endif; ?>
 
     </div>
+	</div>
 </div>

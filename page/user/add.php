@@ -1,3 +1,9 @@
+<?php
+	include("headeruser2.php")
+?>
+
+
+<div class="isi2">
 <h1>
 <a href="<?= $_url ?>user" class="nav-button transform"><span></span></a>
 Tambah User
@@ -86,3 +92,5 @@ if (isset($_POST['submit'])) {
 </div>
 
 </form>
+
+</div>

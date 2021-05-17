@@ -1,3 +1,8 @@
+<?php
+	include("headermatkul1.php")
+?>
+
+<div class="isi2">
 <h1>
 Mata Kuliah
 <span class="place-right">
@@ -53,3 +58,4 @@ Mata Kuliah
 		
 	</tbody>
 </table>
+</div>

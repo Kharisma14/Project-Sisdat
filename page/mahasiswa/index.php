@@ -1,3 +1,8 @@
+<?php
+	include("headermhs1.php")
+?>
+
+<div class="isi2">
 <h1>
 Mahasiswa
 <span class="place-right">
@@ -63,3 +68,4 @@ Mahasiswa
 		
 	</tbody>
 </table>
+</div>

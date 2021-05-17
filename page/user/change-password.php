@@ -1,7 +1,8 @@
 <?php
-
-
+	include("headeruser2.php")
 ?>
+
+<div class="isi2">
 <h1>
 <a href="<?= $_url ?>" class="nav-button transform"><span></span></a>
 Change Password
@@ -61,3 +62,5 @@ if (isset($_POST['submit'])) {
 </div>
 
 </form>
+
+</div>

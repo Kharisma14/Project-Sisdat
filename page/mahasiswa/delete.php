@@ -1,4 +1,7 @@
 <?php
+	include("headermhs3.php")
+?>
+<?php
 
 if (isset($_params[2]) && $_params[2] == 'yes') {
 $query = mysqli_query($koneksi, "DELETE FROM mahasiswa WHERE npm='{$_id}'");
@@ -20,7 +23,8 @@ $query = mysqli_query($koneksi, "DELETE FROM mahasiswa WHERE npm='{$_id}'");
 	}
 }
 ?>
-
+<div class="isi2">
 <h1>Hapus Mahasiswa</h1>
 <h3>Apakah anda yakin akan menghapus mahasiswa dengan NPM <?= $_id ?> yang bernama <?= urldecode($_params[1]) ?>?</h3>
 <a href="<?= $_url ?>mahasiswa/delete/<?= $_id ?>/<?= $_params[1] ?>/yes" class="button primary">Yes</a> <a href="<?= $_url ?>mahasiswa" class="button danger">No</a>
+</div>

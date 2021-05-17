@@ -1,3 +1,7 @@
+<?php
+	include("headermhs2.php")
+?>
+<div class="isi2">
 <h1>
 <a href="<?= $_url ?>mahasiswa" class="nav-button transform"><span></span></a>
 Tambah Mahasiswa
@@ -123,3 +127,5 @@ if (isset($_POST['submit'])) {
 </div>
 
 </form>
+
+</div>

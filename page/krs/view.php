@@ -1,4 +1,9 @@
 <?php
+	include("headerkrs2.php")
+?>
+
+<div class="isi2">
+<?php
 	if ($_access == 'mahasiswa' && $_id != $_username) {
 		header("location:{$_url}krs/view/{$_username}");
 	}
@@ -121,3 +126,4 @@ extract($field);
 		
 	</tbody>
 </table>
+</div>

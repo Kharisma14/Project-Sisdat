@@ -2172,6 +2172,7 @@ span {
 .block-shadow-impact {
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
 }
+
 .bottom-shadow {
   box-shadow: -1px 6px 6px -6px rgba(0, 0, 0, 0.35);
 }
@@ -2802,7 +2803,7 @@ h6 .small {
 }
 .text-bold {
   font-style: normal;
-  font-weight: 700;
+  font-weight: 900;
 }
 .text-italic {
   font-style: italic;
@@ -2989,6 +2990,12 @@ hr.thin {
 hr.fat {
   height: 3px;
 }
+
+.isi2{
+  margin:2% auto;
+  width: 90%;
+}
+
 .tag {
   display: inline-block;
   line-height: 1.1;

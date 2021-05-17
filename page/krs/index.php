@@ -1,3 +1,8 @@
+<?php
+	include("headerkrs1.php")
+?>
+
+<div class="isi2">
 <h1>
 KRS Mahasiswa
 </h1>
@@ -50,3 +55,5 @@ KRS Mahasiswa
 	
 	</tbody>
 </table>
+
+</div>

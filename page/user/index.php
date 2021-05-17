@@ -1,3 +1,8 @@
+<?php
+	include("headeruser1.php")
+?>
+
+<div class="isi2">
 <h1>
 Users
 <span class="place-right">
@@ -52,3 +57,4 @@ Users
 		
 	</tbody>
 </table>
+</div>

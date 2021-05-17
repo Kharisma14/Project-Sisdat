@@ -1,4 +1,9 @@
 <?php
+	include("headeruser3.php")
+?>
+
+<div class="isi2">
+<?php
 $querya = mysqli_query($koneksi, "SELECT * FROM user WHERE id='{$_id}'");
 $field = mysqli_fetch_array($querya);
 extract($field);
@@ -95,3 +100,4 @@ if (isset($_POST['submit'])) {
 </div>
 
 </form>
+</div>

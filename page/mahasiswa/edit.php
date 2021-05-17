@@ -1,3 +1,15 @@
+<style>
+	.border{
+ 	border: 1px solid #bbbbbb;
+  	font-size: 20px;
+	padding: 9px;
+	}
+</style>
+
+<?php
+	include("headermhs3.php")
+?>
+
 <?php
 	if ($_access == 'mahasiswa' && $_id != $_username) {
 		header("location:{$_url}mahasiswa/edit/{$_username}");
@@ -7,6 +19,8 @@ $querya = mysqli_query($koneksi, "SELECT * FROM mahasiswa WHERE npm='{$_id}'");
 $field = mysqli_fetch_array($querya);
 extract($field);
 ?>
+
+<div class="isi2">
 <h1>
 <?php if (in_array($_access, array('admin'))): ?>
 <a href="<?= $_url ?>mahasiswa<?= $_access == 'mahasiswa' ? '/view/' . $_id . '/' . urlencode($nama) : '' ?>" class="nav-button transform"><span></span></a>
@@ -52,7 +66,15 @@ if (isset($_POST['submit'])) {
 			<input type="text" name="npm" value="<?= $npm ?>">
 		</div>
 	</div>
+	<?php elseif ($_access == 'mahasiswa'): ?>
+		<div class="cell">
+		<label>NPM</label>
+		<div class="border input-control text full-size">
+		<?= $npm ?>
+		</div>
+	</div>
 	<?php endif; ?>
+
 	
 	<div class="cell">
 		<label>Nama</label>
@@ -78,6 +100,7 @@ if (isset($_POST['submit'])) {
 		</div>
 	</div>
 	<?php endif; ?>
+	
 </div>
 
 <div class="row cells2">
@@ -139,3 +162,4 @@ if (isset($_POST['submit'])) {
 </div>
 
 </form>
+</div>

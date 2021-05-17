@@ -1,8 +1,14 @@
 <?php
+	include("headermatkul3.php")
+?>
+
+<?php
 $querya = mysqli_query($koneksi, "SELECT * FROM mata_kuliah WHERE kode='{$_id}'");
 $field = mysqli_fetch_array($querya);
 extract($field);
 ?>
+
+<div class="isi2">
 <h1>
 <a href="<?= $_url ?>matakuliah" class="nav-button transform"><span></span></a>
 Edit Matkul <br> <?= $nama ?>
@@ -79,3 +85,5 @@ if (isset($_POST['submit'])) {
 </div>
 
 </form>
+
+</div>

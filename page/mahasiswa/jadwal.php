@@ -1,3 +1,8 @@
+<?php
+	include("headermhs3.php")
+?>
+
+<div class="isi2">
 <h1>
 Jadwal Mata Kuliah
 </h1>
@@ -49,3 +54,5 @@ Jadwal Mata Kuliah
 		
 	</tbody>
 </table>
+
+</div>
