@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 16, 2021 at 04:35 PM
+-- Generation Time: May 18, 2021 at 09:52 AM
 -- Server version: 10.4.17-MariaDB
 -- PHP Version: 8.0.2
 
@@ -67,7 +67,10 @@ CREATE TABLE `jadwal_dosen` (
 
 INSERT INTO `jadwal_dosen` (`id_jd`, `nip`, `kode`, `hari`, `jam`, `ruang`) VALUES
 (1, '10651010', 'TI003', 'Senin', '08:00:00', 'R207'),
-(10, '10651015', 'TI001', 'Selasa', '13:00:00', 'R205');
+(10, '10651015', 'TI001', 'Selasa', '13:00:00', 'R205'),
+(11, '10651020', 'TI006', 'Senin', '10:30:00', 'R202'),
+(12, '10651025', 'TI005', 'Jumat', '08:00:00', 'R301'),
+(13, '10651030', 'TI002', 'Selasa', '10:30:00', 'R207');
 
 -- --------------------------------------------------------
 
@@ -88,7 +91,7 @@ CREATE TABLE `krs` (
 
 INSERT INTO `krs` (`id_krs`, `npm`, `id_jd`, `accept`) VALUES
 (1, '140810200033', 1, 1),
-(14, '140810200033', 10, 1);
+(15, '140810200045', 10, 1);
 
 -- --------------------------------------------------------
 
@@ -139,7 +142,8 @@ INSERT INTO `mata_kuliah` (`kode`, `nama`, `sks`, `semester`) VALUES
 ('TI002', 'Sistem Database', 3, 2),
 ('TI003', 'Kalkulus II', 3, 2),
 ('TI004', 'Fisika Informatika', 3, 2),
-('TI005', 'Arsitektur dan Organisasi Komputer', 3, 2);
+('TI005', 'Arsitektur dan Organisasi Komputer', 3, 2),
+('TI006', 'Algoritma dan Pemrograman', 3, 1);
 
 -- --------------------------------------------------------
 
@@ -163,7 +167,8 @@ INSERT INTO `user` (`id`, `nama`, `username`, `password`, `status`) VALUES
 (1, 'Administrator', 'admin', '21232f297a57a5a743894a0e4a801fc3', 'admin'),
 (12, 'Rafa Azka Ulinnuha', '140810200033', '681f303f3b9ade008797dcbfaf4231fa', 'mahasiswa'),
 (13, 'Amalia Nur Fitri', '140810200045', '37cb11b6cae8bc61085321413f597fa9', 'mahasiswa'),
-(14, 'Kharisma Fitri Nurunnisa Siahaan', '140810200047', 'bda9c46db4ade3a968e4be1e8ef56f38', 'mahasiswa');
+(14, 'Kharisma Fitri Nurunnisa Siahaan', '140810200047', 'bda9c46db4ade3a968e4be1e8ef56f38', 'mahasiswa'),
+(15, 'Aulia Rahmanita', '140810200004', '29826fc761dada063cb28aad09a89d1e', 'mahasiswa');
 
 --
 -- Indexes for dumped tables
@@ -217,19 +222,19 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `jadwal_dosen`
 --
 ALTER TABLE `jadwal_dosen`
-  MODIFY `id_jd` int(1) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id_jd` int(1) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT for table `krs`
 --
 ALTER TABLE `krs`
-  MODIFY `id_krs` int(1) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `id_krs` int(1) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- Constraints for dumped tables
