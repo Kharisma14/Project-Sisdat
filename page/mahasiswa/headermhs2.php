@@ -1,7 +1,7 @@
 <header class="app-bar fixed-top" data-role="appbar" style="background-color: #e5e5e5">
     <div class="atas">
         <div class ="logo" style="margin-left: 50px">
-            <img src="img/Logo.png" alt="logo" class="img">
+            <img src="../img/Logo.png" alt="logo" class="img">
         </div>
         <a href="<?= $_url ?>" class="app-bar-element branding judul">
         <h1><b>Sistem Pengisian KRS</b></h1>
